@@ -42,6 +42,7 @@
       this.teamTwoScoreLabel = new System.Windows.Forms.Label();
       this.teamTwoName = new System.Windows.Forms.Label();
       this.vsLabel = new System.Windows.Forms.Label();
+      this.scoreButton = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // headerLabel
@@ -49,7 +50,7 @@
       this.headerLabel.AutoSize = true;
       this.headerLabel.Font = new System.Drawing.Font("Segoe UI Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.headerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-      this.headerLabel.Location = new System.Drawing.Point(12, 9);
+      this.headerLabel.Location = new System.Drawing.Point(12, 22);
       this.headerLabel.Name = "headerLabel";
       this.headerLabel.Size = new System.Drawing.Size(214, 50);
       this.headerLabel.TabIndex = 0;
@@ -60,7 +61,7 @@
       this.tournamentName.AutoSize = true;
       this.tournamentName.Font = new System.Drawing.Font("Segoe UI Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.tournamentName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-      this.tournamentName.Location = new System.Drawing.Point(232, 9);
+      this.tournamentName.Location = new System.Drawing.Point(232, 22);
       this.tournamentName.Name = "tournamentName";
       this.tournamentName.Size = new System.Drawing.Size(150, 50);
       this.tournamentName.TabIndex = 1;
@@ -91,7 +92,7 @@
       this.unplayedOnlyCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.unplayedOnlyCheckBox.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.unplayedOnlyCheckBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-      this.unplayedOnlyCheckBox.Location = new System.Drawing.Point(121, 172);
+      this.unplayedOnlyCheckBox.Location = new System.Drawing.Point(121, 154);
       this.unplayedOnlyCheckBox.Name = "unplayedOnlyCheckBox";
       this.unplayedOnlyCheckBox.Size = new System.Drawing.Size(209, 41);
       this.unplayedOnlyCheckBox.TabIndex = 4;
@@ -103,7 +104,7 @@
       this.matchupListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
       this.matchupListBox.FormattingEnabled = true;
       this.matchupListBox.ItemHeight = 30;
-      this.matchupListBox.Location = new System.Drawing.Point(28, 253);
+      this.matchupListBox.Location = new System.Drawing.Point(28, 210);
       this.matchupListBox.Name = "matchupListBox";
       this.matchupListBox.Size = new System.Drawing.Size(339, 392);
       this.matchupListBox.TabIndex = 5;
@@ -113,7 +114,7 @@
       this.teamOneName.AutoSize = true;
       this.teamOneName.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.teamOneName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-      this.teamOneName.Location = new System.Drawing.Point(436, 253);
+      this.teamOneName.Location = new System.Drawing.Point(408, 187);
       this.teamOneName.Name = "teamOneName";
       this.teamOneName.Size = new System.Drawing.Size(165, 37);
       this.teamOneName.TabIndex = 6;
@@ -124,7 +125,7 @@
       this.teamOneScoreLabel.AutoSize = true;
       this.teamOneScoreLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.teamOneScoreLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-      this.teamOneScoreLabel.Location = new System.Drawing.Point(436, 302);
+      this.teamOneScoreLabel.Location = new System.Drawing.Point(408, 236);
       this.teamOneScoreLabel.Name = "teamOneScoreLabel";
       this.teamOneScoreLabel.Size = new System.Drawing.Size(82, 37);
       this.teamOneScoreLabel.TabIndex = 7;
@@ -132,14 +133,14 @@
       // 
       // teamOneScoreValue
       // 
-      this.teamOneScoreValue.Location = new System.Drawing.Point(543, 302);
+      this.teamOneScoreValue.Location = new System.Drawing.Point(515, 236);
       this.teamOneScoreValue.Name = "teamOneScoreValue";
       this.teamOneScoreValue.Size = new System.Drawing.Size(100, 35);
       this.teamOneScoreValue.TabIndex = 8;
       // 
       // teamTwoScoreValue
       // 
-      this.teamTwoScoreValue.Location = new System.Drawing.Point(543, 461);
+      this.teamTwoScoreValue.Location = new System.Drawing.Point(515, 395);
       this.teamTwoScoreValue.Name = "teamTwoScoreValue";
       this.teamTwoScoreValue.Size = new System.Drawing.Size(100, 35);
       this.teamTwoScoreValue.TabIndex = 11;
@@ -149,7 +150,7 @@
       this.teamTwoScoreLabel.AutoSize = true;
       this.teamTwoScoreLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.teamTwoScoreLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-      this.teamTwoScoreLabel.Location = new System.Drawing.Point(436, 461);
+      this.teamTwoScoreLabel.Location = new System.Drawing.Point(408, 395);
       this.teamTwoScoreLabel.Name = "teamTwoScoreLabel";
       this.teamTwoScoreLabel.Size = new System.Drawing.Size(82, 37);
       this.teamTwoScoreLabel.TabIndex = 10;
@@ -160,7 +161,7 @@
       this.teamTwoName.AutoSize = true;
       this.teamTwoName.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.teamTwoName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-      this.teamTwoName.Location = new System.Drawing.Point(436, 412);
+      this.teamTwoName.Location = new System.Drawing.Point(408, 346);
       this.teamTwoName.Name = "teamTwoName";
       this.teamTwoName.Size = new System.Drawing.Size(165, 37);
       this.teamTwoName.TabIndex = 9;
@@ -171,18 +172,33 @@
       this.vsLabel.AutoSize = true;
       this.vsLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.vsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-      this.vsLabel.Location = new System.Drawing.Point(491, 366);
+      this.vsLabel.Location = new System.Drawing.Point(463, 300);
       this.vsLabel.Name = "vsLabel";
       this.vsLabel.Size = new System.Drawing.Size(70, 37);
       this.vsLabel.TabIndex = 12;
       this.vsLabel.Text = "-VS-";
+      // 
+      // scoreButton
+      // 
+      this.scoreButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+      this.scoreButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+      this.scoreButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+      this.scoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.scoreButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+      this.scoreButton.Location = new System.Drawing.Point(650, 288);
+      this.scoreButton.Name = "scoreButton";
+      this.scoreButton.Size = new System.Drawing.Size(116, 67);
+      this.scoreButton.TabIndex = 13;
+      this.scoreButton.Text = "Score";
+      this.scoreButton.UseVisualStyleBackColor = true;
       // 
       // TournamentViewer
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
-      this.ClientSize = new System.Drawing.Size(834, 672);
+      this.ClientSize = new System.Drawing.Size(800, 618);
+      this.Controls.Add(this.scoreButton);
       this.Controls.Add(this.vsLabel);
       this.Controls.Add(this.teamTwoScoreValue);
       this.Controls.Add(this.teamTwoScoreLabel);
@@ -221,6 +237,7 @@
     private System.Windows.Forms.Label teamTwoScoreLabel;
     private System.Windows.Forms.Label teamTwoName;
     private System.Windows.Forms.Label vsLabel;
+    private System.Windows.Forms.Button scoreButton;
   }
 }
 
