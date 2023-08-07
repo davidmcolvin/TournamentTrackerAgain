@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace TrackerUI
 {
-  public partial class TournamentViewer : Form
+  public partial class CreateTournamentForm : Form
   {
-    public TournamentViewer()
+    public CreateTournamentForm()
     {
       InitializeComponent();
-    }
-
-    private void scoreButton_Click(object sender, EventArgs e)
-    {
-      CreateTournamentForm form = new CreateTournamentForm(); 
-      form.ShowDialog();
     }
   }
 }
